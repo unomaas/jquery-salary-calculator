@@ -2,19 +2,10 @@ $(document).ready(function() {
   console.log('jQuery Works');
   console.log('Js Works');
 
-  //#region ⬇ Employee data below: ... oops, this actually isn't even required.  Guess it's good practice. 
-  const jenB = {firstName: "Jen", lastName: "Barber", id: 4521, title: "Team Lead", annualSalary: 80000};
-  const mauriceM = {firstName: "Maurice", lastName: "Moss", id: 8724, title: "Support Team", annualSalary: 58000};
-  const royS = {firstName: "Roy", lastName: "Smith", id: 9623, title: "Quality Assurance", annualSalary: 48000};
-  const ryanM = {firstName: "Ryan", lastName: "Maas", id: 0001, title: "CEO", annualSalary: 90000};
-  const hannahE = {firstName: "Hannah", lastName: "Engelhart", id: 0002, title: "Controller", annualSalary: 85000};
-  const employeesArray = [jenB, mauriceM, royS, ryanM, hannahE];
-  //#endregion ⬆ Employee data above. 
-
-  //#region ⬇ Setting default monthly costs: 
+  //#region ⬇ Setting default salary and budget values below: 
   let monthlyCosts = 0;
   let totalSalary = 0;
-  //#endregion ⬆ Default monthly costs above. 
+  //#endregion ⬆ Setting default salary and budget values above. 
 
   //#region ⬇ Submit button actions below:
   $('#submitButton').on('click', clickedSubmit)
@@ -62,7 +53,9 @@ $(document).ready(function() {
   $('#tableBody').on('click', '.deleteEmployeeButton', clickedDelete);
   function clickedDelete() {
     console.log('Test: In clickedDelete.'); 
-    $(this).parent().parent().remove(); // Syntax: Button.Cell.Row.Remove.
+
+    // ⬇ Deleting the row on click.  Syntax: Button.Cell.Row.Remove.
+    $(this).parent().parent().remove(); 
     // ⬇ This is where the Stretch goal code would go, I think. 
 
   } // End clickedDelete function. 
