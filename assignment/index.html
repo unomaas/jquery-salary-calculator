@@ -12,16 +12,56 @@
       <h1>Salary Calculator</h1>
     </header>
     <main>
-      <div id="addEmployee">
-        <h2>Add Employee</h2>
-      </div>
+
+      <!-- ⬇ Add Employee Input Fields Below. -->
       <div id="inputFields">
+        <h2 id="addEmployee">Add Employee</h2>
         <input type="text" id="firstNameInput" placeholder="First Name?">
         <input type="text" id="lastNameInput" placeholder="Last Name?">
         <input type="text" id="idInput" placeholder="Employee ID?">
         <input type="text" id="titleInput" placeholder="Title?">
         <input type="text" id="salaryInput" placeholder="Annual Salary?">
+        <br><br>
+        <button id="submitButton">Submit Employee Information</button>
       </div>
+      <!-- ⬆ Add Employee Input Fields Above. -->
+      <br><br>
+      <!-- ⬇ Employees Table Data Below. -->
+      <div id="tableData">
+        <h2 id="employees">Employees</h2>
+        <table id="employeeTable">
+          <thead id="tableHead">
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Title</th>
+              <th>ID</th>
+              <th>Annual Salary</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td class="titleCell">CEO</td>
+              <td>5012</td>
+              <td class="salaryCell">$125,000</td>
+              <td class="deleteCell"><button class="deleteEmployeeButton">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>Quality Assurance</td>
+              <td>9434</td>
+              <td class="salaryCell">$125,000</td>
+              <td class="deleteCell"><button class="deleteEmployeeButton">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- ⬆ Employees Table Data Above. -->
+
     </main>
   </body>
 </html>
