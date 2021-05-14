@@ -44,9 +44,9 @@ tr {
 }
 
 th {
+    text-align: center;
     background-color: rgb(49, 49, 200);
     color: white;
-    font-size: 16px;
 }
 
 .deleteCell {
