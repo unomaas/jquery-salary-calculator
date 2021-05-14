@@ -18,7 +18,7 @@ $(document).ready(function() {
   //#region ⬇ Submit button actions below:
   $('#submitButton').on('click', clickedSubmit)
   function clickedSubmit() {
-    console.log('In clickedSubmit'); 
+    console.log('Test: In clickedSubmit.'); 
     // ⬇ Declaring variables stored with input values: 
     let firstNameInput = $('#firstNameInput').val();
     let lastNameInput = $('#lastNameInput').val();
@@ -41,11 +41,29 @@ $(document).ready(function() {
     // ⬇ Updating monthly costs after click. 
     monthlyCosts += Number(salaryInput); // Not sure how this will function on number vs string. 
     $('#monthlyOutput').text(monthlyCosts);
-    console.log(monthlyCosts);
+    console.log('Test: Monthly Costs are currently: ', monthlyCosts);
   } // End clickedSubmit function. 
   //#endregion ⬆ Submit button actions above. 
 
+  //#region ⬇ Delete button actions below:
+  $('#tableBody').on('click', '.deleteEmployeeButton', clickedDelete);
+  function clickedDelete() {
+    console.log('Test: In clickedDelete.'); 
+    $(this).parent().parent().remove(); // Button -> Cell -> Row. 
+    // ⬇ Delete This is where the Stretch goal would go, I think. 
 
+  } // End clickedDelete function. 
+  //#endregion ⬆ Delete button actions above. 
+
+  // //#region ⬇ Red delete boxes actions below: 
+  // $("body").on("click", ".redBoxes", deletesRedBox); 
+  // function deletesRedBox() {
+  //   $(this).remove();
+  //   $("#redCounterOutput").empty();
+  //   redCounterOutput -= 1;
+  //   $("#redCounterOutput").append(redCounterOutput);
+  // }
+  // //#endregion ⬆ Red delete boxes actions below: 
 
 });
 
