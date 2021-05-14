@@ -61,3 +61,7 @@ th {
 #submitButton {
     font-size: 16px;
 }
+
+.overBudget {
+    background-color: rgb(255, 137, 137);
+}

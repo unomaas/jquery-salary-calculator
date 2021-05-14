@@ -42,6 +42,10 @@ $(document).ready(function() {
     monthlyCosts += Number(salaryInput); // Not sure how this will function on number vs string. 
     $('#monthlyOutput').text(monthlyCosts);
     console.log('Test: Monthly Costs are currently: ', monthlyCosts);
+    // ⬇ If over $20k, add red background. 
+    if (monthlyCosts > 20000) {
+      $('#totalMonthlyCost').addClass('overBudget');
+    } // End if overBudget. 
   } // End clickedSubmit function. 
   //#endregion ⬆ Submit button actions above. 
 
@@ -49,28 +53,19 @@ $(document).ready(function() {
   $('#tableBody').on('click', '.deleteEmployeeButton', clickedDelete);
   function clickedDelete() {
     console.log('Test: In clickedDelete.'); 
-    $(this).parent().parent().remove(); // Button -> Cell -> Row. 
-    // ⬇ Delete This is where the Stretch goal would go, I think. 
+    $(this).parent().parent().remove(); // Button.Cell.Row.Remove.
+    // ⬇ This is where the Stretch goal code would go, I think. 
 
   } // End clickedDelete function. 
   //#endregion ⬆ Delete button actions above. 
 
-  // //#region ⬇ Red delete boxes actions below: 
-  // $("body").on("click", ".redBoxes", deletesRedBox); 
-  // function deletesRedBox() {
-  //   $(this).remove();
-  //   $("#redCounterOutput").empty();
-  //   redCounterOutput -= 1;
-  //   $("#redCounterOutput").append(redCounterOutput);
-  // }
-  // //#endregion ⬆ Red delete boxes actions below: 
+
 
 });
 
 // Base Mode: 
   // - Step #1.) The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_. (DONE)
-  // - Step #2.) A 'Submit' button should collect the form information, store the information to calculate monthly costs, append information to the DOM and clear the input fields. (MOSTLY DONE)
-  // ----------- Need to figure out how to store the information to calculate monthly costs. 
+  // - Step #2.) A 'Submit' button should collect the form information, store the information to calculate monthly costs, append information to the DOM and clear the input fields. (DONE)
   // - Step #3.) Using the stored information, calculate monthly costs and append this to the to DOM. If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
   // - Step #4.) Create a delete button that removes an employee from the DOM. For Base mode, it does **not** need to remove that Employee's salary from the reported total.
 // Stretch Mode: 
@@ -95,3 +90,13 @@ $(document).ready(function() {
   //   `);
   //   $('input').val('');
   // } // End addsNewPet function. 
+
+  // //#region ⬇ Red delete boxes actions below: 
+  // $("body").on("click", ".redBoxes", deletesRedBox); 
+  // function deletesRedBox() {
+  //   $(this).remove();
+  //   $("#redCounterOutput").empty();
+  //   redCounterOutput -= 1;
+  //   $("#redCounterOutput").append(redCounterOutput);
+  // }
+  // //#endregion ⬆ Red delete boxes actions below: 
