@@ -2,6 +2,15 @@ $(document).ready(function() {
   console.log('jQuery Works');
   console.log('Js Works');
 
+  //#region ⬇ Employee object data below:
+  const jenB = {firstName: "Jen", lastName: "Barber", id: 4521, title: "Team Lead", annualSalary: 80000};
+  const mauriceM = {firstName: "Maurice", lastName: "Moss", id: 8724, title: "Support Team", annualSalary: 58000};
+  const royS = {firstName: "Roy", lastName: "Smith", id: 9623, title: "Quality Assurance", annualSalary: 48000};
+  const ryanM = {firstName: "Ryan", lastName: "Maas", id: 0001, title: "CEO", annualSalary: 90000};
+  const hannahE = {firstName: "Hannah", lastName: "Engelhart", id: 0002, title: "Controller", annualSalary: 85000};
+
+
+  const employeesArray = [jenB, mauriceM, royS, ryanM, hannahE];
 
 });
 

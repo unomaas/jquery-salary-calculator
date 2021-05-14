@@ -1,68 +1,63 @@
-body, html {
-  margin: 0 auto;
-  text-align: center;
+body,
+html {
+    margin: 0 auto;
+    text-align: center;
 }
 
 input {
-  font-size: 16px;
-  width: 140px;
+    font-size: 16px;
+    width: 140px;
 }
 
 header {
-  background-color: darkblue;
-  color: white;
-  height: 135px;
-  width: 100%;
-  line-height: 100px;
-  overflow: hidden;
+    background-color: rgb(0, 0, 113);
+    color: white;
+    height: 135px;
+    width: 100%;
+    line-height: 100px;
+    overflow: hidden;
 }
 
 #employeeTable {
-  border: 2px solid black;
-  margin-left: auto;
-  margin-right: auto;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-th, td {
-  text-align: left;
-  padding: 7px 16px;
-  font-size: 18px;
+th,
+td {
+    text-align: left;
+    padding: 7px 16px;
+    font-size: 18px;
 }
 
-tr:nth-child(even){
-  background-color: #dbdbdb;
+#bottomRow {
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #dbdbdb;
 }
 
 tr {
-  background-color: #efefef;
+    background-color: #efefef;
 }
 
 th {
-  background-color: rgb(57, 57, 210);
-  color: white;
-  font-size: 16px;
+    background-color: rgb(49, 49, 200);
+    color: white;
+    font-size: 16px;
 }
 
 .deleteCell {
-  text-align: center;
+    text-align: center;
 }
 
 .salaryCell {
-  text-align: right;
+    text-align: right;
 }
 
-
-.deleteEmployeeButton, #submitButton {
-  font-size: 16px;
+.deleteEmployeeButton,
+#submitButton {
+    font-size: 16px;
 }
-
-/* GSP:
-I come from a background of martial arts, so I grew up watching a lot of UFC and such.  I don't follow it so much anymore. 
-Back then, a lot of the combat sport and martial arts in general had a bad reputation from people who are meatheads and wanted to be intimidating.  Basically the biggest mouth and most controversial opinions would sell tickets.
-GSP did not fall into that mold.  He's incredibly respectful, humble, and approached the fight game with a level of intelligence that was incredibly uncommon for the time.  You could see it with his team that he surrounded himself with, and what his routine was like.  
-I can relate to him a lot -- he was bullied as a kid and that lead him into karate, which instilled a lot of strong ideals and work ethics into him.  He famously would say how much he hates the fight game, and how nervous and anxious it would make him, but it also allowed him to life a lifestyle outside of work that he loved and provide for his family.
-One particular moment I remember is when he was a coach for aspiring fighters on "The Ultimate Fighter".  Whenever the opposing team would win, they'd be so disrespectful to his team -- banging on the walls, talking crap, etc. 
-However, when GSP's team would win, he *made* them be humble and thankful and respectful.  They'd check on their opponent, give them space to process the loss, etc.  
-He was a perfect coach with awesome ideals, and excellent fighter with high intelligence on how to approach training and life in general.  And that's why I like GSP.  
- */
-
