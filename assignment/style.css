@@ -1,5 +1,13 @@
 body {
+  margin: 0 auto;
+}
+
+header {
   background-color: gray;
   color: white;
   text-align: center;
+  height: 135px;
+  width: 100%;
+  line-height: 100px;
+  overflow: hidden;
 }
