@@ -69,8 +69,6 @@ $(document).ready(function() {
 
   } // End clickedDelete function. 
   //#endregion ⬆ Delete button actions above. 
-
-
 });
 
 // My To Do:
@@ -84,6 +82,6 @@ $(document).ready(function() {
   // - Step #4.) Create a delete button that removes an employee from the DOM. For Base mode, it does **not** need to remove that Employee's salary from the reported total. (DONE)
 // Stretch Mode: 
   // - Stretch #1.) Add styling or extra functionality that fits with the theme of this assignment.
-  // ------ Maybe disable submit if the inputs are blank?
+  // ------ Prevent submit if input fields are blank. (DONE)
   // ------ Add commas to large numbers for the outputs.  
   // - Stretch #2.) Once the employee is deleted, update the total spend on salaries account for this employee's removal. This will require that the logic knows which element was removed. You will need to use `.text()` as a getter or look into jQuery's `.data()` function. This is tricky! 
